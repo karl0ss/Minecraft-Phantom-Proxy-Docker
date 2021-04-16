@@ -2,10 +2,11 @@ version: '3.4'
 
 services:
   phantom-proxy:
-    image: karl0ss/minecraftphantomproxydocker:arm7
-    container_name: phantom-proxy
+    image: karl0ss/minecraftphantomproxydocker:latest
+    container_name: minecraft-phantom
     environment:
       SERVER: example.com:19132
+      ARM_VERSION: arm7
       #BIND_PORT: 0
       #BIND_IP: 0.0.0.0
       #TIMEOUT: 60
