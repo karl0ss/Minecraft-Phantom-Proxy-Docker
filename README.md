@@ -1,8 +1,10 @@
-# Docker image for Jhead's Phantom proxy
+# ARM7 Docker image for Jhead's Phantom proxy
+
+This repo is an update of [nkelemen18 repo](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker) to add arm7 image to run on Raspberry PI
 
 ## Basic usage:
 ```bash
-docker container run --name phantom-proxy -e SERVER=<server ip>:<server_port> --network host nkelemen18/minecraft-phantom-proxy:latest
+docker container run --name phantom-proxy -e SERVER=<server ip>:<server_port> --network host karl0ss/minecraftphantomproxydocker:arm7
 ```
 Or with docker compose:
 
@@ -10,7 +12,7 @@ Or with docker compose:
 docker-compose up -d
 ```
 
-[Example docker-compose file](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker/blob/master/docker-compose.yml)
+[Example docker-compose file](https://github.com/karl0ss/Minecraft-Phantom-Proxy-Docker/blob/master/docker-compose.yml)
 
 ### Available variables:
 
@@ -25,9 +27,9 @@ docker-compose up -d
 
 *Note: host network mode required.*
 
-[Github repo](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker)
+[Github repo](https://github.com/karl0ss/Minecraft-Phantom-Proxy-Docker)
 
-[Dockerhub](https://hub.docker.com/repository/docker/nkelemen18/minecraft-phantom-proxy)
+[Dockerhub](https://hub.docker.com/r/karl0ss/minecraftphantomproxydocker)
 
 The proxy is written by jhead.
 [Phantom on GitHub](https://github.com/jhead/phantom)
